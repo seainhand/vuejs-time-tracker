@@ -2,4 +2,4 @@
 
 >  A todo and deadline app
 
-demo : https://seainhand.github.io/vue-time-tracker/
+demo : https://seainhand.github.io/Vuejs-Time-Tracker/
