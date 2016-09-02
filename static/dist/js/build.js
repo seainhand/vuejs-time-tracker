@@ -11458,7 +11458,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.time-entries{\n\twidth: 100%;\n}\n.list-group-item{\n\twidth: 90%;\n\theight: 170px;\n\tmargin:20px auto;\n\tbackground-color: #fff;\n\tborder: 2px solid #ccc;\n\tborder-radius: 10px;\n\tposition: relative;\n\tmargin-bottom: 40px;\n}\n.user-details{\n\tfloat: left;\n\twidth: 170px;\n\theight: 170px;\n\tbackground-color: #eee;\n\tborder-radius: 11px 0 0 11px;\n\ttext-align: center;\n}\n.avatar{\n\twidth: 110px;\n\theight: 110px;\n\tpadding: 10px;\n\tborder-radius: 100%;\n}\n.time-block{\n\tpadding: 20px;\n\n\ttext-align: center;\n\tfloat: left;\n}\n.total-time{\n\tfont-size: 2em;\n\tpadding: 20px;\n\tmargin-left: 40px;\n\tmargin-right: 60px;\n}\n.calendar-time{\n\tfont-size: 1.2em;\n\tpadding: 10px;\n}\n.comment-section{\n\tpadding: 20px;\n\tpadding-top: 40px;\n}\n\n.deletBtn{\n\tposition: absolute;\n\tright: 7px;\n\ttop: 5px;\n\twidth: 1.2em;\n\theight: 1em;\n\tpadding: 10px;\n\ttext-align: center;\n\tborder-radius: 5px;\n\tbackground-color: #fff;\n\t-webkit-transition:  0.4s;\n\ttransition:  0.4s;\n}\n\n.deletBtn:hover{\n  cursor: pointer;\n  color: #fff;\n  background-color: #F45551;\n}\n.btn-create{\n  width: 20%;\n\tpadding: 10px 120px;\n\ttext-align: center;\n\tborder-radius: 5px;\n  box-sizing:border-box;\n  -moz-box-sizing:border-box; /* Firefox */\n  -webkit-box-sizing:border-box;\n\tbackground-color: #4CB0F9;\n\tcolor: #fff;\n\t-webkit-transition:  0.4s;\n\ttransition:  0.4s;\n\tfont-size: 1.5em;\n\tcursor: pointer;\n  margin-left: 10%;\n  margin-top: 20px;\n}\n.btn-create:hover {\n\tbackground-color: #1B9AF7;\n}\n.no-task{\n  width: 80%;\n  margin:20px auto;\n  padding: 20px;\n  background-color: #F27A7A;\n  border-radius: 5px;\n}\n", ""]);
+	exports.push([module.id, "\n.time-entries{\n\twidth: 100%;\n}\n.list-group-item{\n\twidth: 90%;\n\theight: 170px;\n\tmargin:20px auto;\n\tbackground-color: #fff;\n\tborder: 2px solid #ccc;\n\tborder-radius: 10px;\n\tposition: relative;\n\tmargin-bottom: 40px;\n}\n.user-details{\n\tfloat: left;\n\twidth: 170px;\n\theight: 170px;\n\tbackground-color: #eee;\n\tborder-radius: 11px 0 0 11px;\n\ttext-align: center;\n}\n.avatar{\n\twidth: 110px;\n\theight: 110px;\n\tpadding: 10px;\n\tborder-radius: 100%;\n}\n.time-block{\n\tpadding: 20px;\n\n\ttext-align: center;\n\tfloat: left;\n}\n.total-time{\n\tfont-size: 2em;\n\tpadding: 20px;\n\tmargin-left: 40px;\n\tmargin-right: 60px;\n}\n.calendar-time{\n\tfont-size: 1.2em;\n\tpadding: 10px;\n}\n.comment-section{\n\tpadding: 20px;\n\tpadding-top: 40px;\n}\n\n.deletBtn{\n\tposition: absolute;\n\tright: 7px;\n\ttop: 5px;\n\twidth: 1.2em;\n\theight: 1em;\n\tpadding: 10px;\n\ttext-align: center;\n\tborder-radius: 5px;\n\tbackground-color: #fff;\n\t-webkit-transition:  0.4s;\n\ttransition:  0.4s;\n}\n\n.deletBtn:hover{\n  cursor: pointer;\n  color: #fff;\n  background-color: #F45551;\n}\n.btn-create{\n  width: 300px;\n\tpadding: 10px 80px;\n\ttext-align: center;\n\tborder-radius: 5px;\n  box-sizing:border-box;\n  -moz-box-sizing:border-box; /* Firefox */\n  -webkit-box-sizing:border-box;\n\tbackground-color: #4CB0F9;\n\tcolor: #fff;\n\t-webkit-transition:  0.4s;\n\ttransition:  0.4s;\n\tfont-size: 1.5em;\n\tcursor: pointer;\n  margin-left: 8.66%;\n  margin-top: 20px;\n}\n.btn-create:hover {\n\tbackground-color: #1B9AF7;\n}\n.no-task{\n  width: 80%;\n  margin:20px auto;\n  padding: 20px;\n  background-color: #F27A7A;\n  border-radius: 5px;\n}\n", ""]);
 
 	// exports
 
@@ -11662,8 +11662,9 @@
 	          window.localStorage['myTodoList'] = [];
 	        }
 	        this.todoList.push(todoItem);
-	        document.getElementById('todoInput').value = '';
 	        window.localStorage.setItem('myTodoList', this.todoList);
+	        todoItem = '';
+	        document.getElementById('todoInput').value = '';
 	      } else {
 	        window.alert('您的浏览器无法使用本功能');
 	      }
